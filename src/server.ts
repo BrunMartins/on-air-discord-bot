@@ -8,6 +8,7 @@ const client = new Discord.Client({ intents: 384 });
 
 client.on("ready", () => {
   console.log("Logged in as ", client.user?.tag ?? "N/A");
+  fetch(new URL("http://192.168.1.90/off"), { method: "GET" });
 });
 
 client.on("voiceStateUpdate", async (vcState) => {
