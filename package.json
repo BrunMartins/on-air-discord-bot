@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "tsnd --transpile-only --no-notify --respawn ./src/server.ts"
+    "start": "tsnd --transpile-only --no-notify --respawn ./src/server.ts",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
